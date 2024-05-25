@@ -1,13 +1,45 @@
-<doctype html>
-<html>
-<haed>
-	<title>Meu site Online</title>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function generateUniqueCode() {
+            const specialChar = 'Tag: @';
+            const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+            let code = specialChar;
+
+            for (let i = 0; i < 6; i++) {
+                code += letters.charAt(Math.floor(Math.random() * letters.length));
+            }
+
+            document.getElementById('uniqueCode').value = code;
+        }
+    </script>
 </head>
 <body>
-	<a href=""><li><ul>Home</ul></li></a>
-	<center><h1>Olá Bem vindos!!!</h1></center>
-	<center><strong>Aqui voce vai ver o melhor site:!!</strong></center>
-	<br>
-	
+    <div class="container">
+        <div class="admin-form">
+            <h2>Administração de Dados</h2>
+            <form action="process.php" method="post">
+                <label for="affiliate-link">Redirecionamento: </label>
+                <input type="text" id="affiliate-link" name="affiliate-link" required>
+                
+                <label for="product-image">Cabeçario img: </label>
+                <input type="url" id="product-image" name="product-image" required>
+                
+                <label for="product-description">Descrição: </label>
+                <textarea id="product-description" name="product-description" required></textarea>
+
+                <label for="uniqueCode">Search Único:</label>
+                <input type="text" id="uniqueCode" name="uniqueCode" readonly>
+                
+                <button type="button" onclick="generateUniqueCode()">Gerar Código</button>
+                <button type="submit">Salvar Produto</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,114 @@
+﻿/* Estilos para o corpo da página */
+body {
+    background-color: #2c2c2c; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #2c2c2c; /* Fundo escuro */
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    color: #ffffff !important; /* Texto branco */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.navbar-brand:hover,
+.navbar-nav li a:hover {
+    color: #ff69b4 !important; /* Rosa */
+}
+
+/* Estilos para o cabeçalho da página */
+.page-head-line {
+    color: #ff69b4; /* Rosa */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilos para as caixas principais */
+.main-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.mb-dull {
+    background-color: #d35400; /* Laranja */
+}
+
+.mb-red {
+    background-color: #ff6347; /* Vermelho claro */
+}
+
+.mb-pink {
+    background-color: #ff69b4; /* Rosa */
+}
+
+.main-box a,
+.main-box a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-box h5 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos para o rodapé da página */
+#footer-sec {
+    background-color: #2c2c2c; /* Fundo escuro */
+    padding: 15px;
+    text-align: center;
+    color: #ffffff; /* Texto branco */
+}
+
+/* Estilos para o formulário de pesquisa */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #2c2c2c; /* Fundo escuro */
+    border-bottom: 1px solid #ffffff; /* Linha branca */
+}
+
+.search-container form {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ffffff; /* Borda branca */
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #2c2c2c; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+}
+
+.search-container button {
+    padding: 8px 15px;
+    background-color: #ff69b4; /* Rosa */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #ff1493; /* Rosa mais escuro */
+}
